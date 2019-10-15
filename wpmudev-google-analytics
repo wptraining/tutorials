@@ -5,6 +5,7 @@ Plugin URI: https://premium.wpmudev.org
 Description: Adds a Google analytics tracking code to the <head> of your theme, by hooking to wp_head.
 Author: WPMU DEV
 Version: 1.0
+*/
 
 // the function to insert the google analytics tracking code
 function wpmudev_google_analytics() { ?>
