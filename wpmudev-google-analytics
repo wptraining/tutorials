@@ -1,0 +1,33 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-XX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXX-XX');
+</script>
+
+
+<?php
+/*
+Plugin Name: Simple Google Analytics Plugin
+Plugin URI: https://premium.wpmudev.org
+Description: Adds a Google analytics tracking code to the <head> of your theme, by hooking to wp_head.
+Author: WPMU DEV
+Version: 1.0
+
+// the function to insert the google analytics tracking code
+function wpmudev_google_analytics() { ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-XX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXX-XX');
+</script>
+<?php }
+add_action( 'wp_head', 'wpmudev_google_analytics', 10 );
+?>
